@@ -1,5 +1,5 @@
 /* ==========================================================
-   Personal brand site techno dark academia heheh
+   Personal brand site — techno dark academia
    Landing: navy + white accents.  Inner pages: beige + navy ink.
    Fonts: Instrument Serif (titles), Cormorant Garamond (item names),
           Jost (body/UI), IBM Plex Mono (small labels)
@@ -39,6 +39,7 @@ body.inner {
 }
 
 * { box-sizing: border-box; margin: 0; padding: 0; }
+img { max-width: 100%; height: auto; display: block; }
 html { scroll-behavior: smooth; }
 
 body {
@@ -261,13 +262,19 @@ h2.section-title::before {
   gap: 3.5rem;
   align-items: start;
 }
-.book-side {
-  position: sticky;
-  top: 2rem;
+.book-side, .book {
+  max-width: 210px;                 /* can never grow past this, whatever the markup */
   padding-left: 2rem;
   border-left: 1px solid var(--line);
+  margin-top: 2.5rem;
 }
-.book-side .cover {
+/* Fixed in view only when it sits inside the two-column layout */
+.about-layout > .book-side {
+  position: sticky;
+  top: 2rem;
+  margin-top: 0;
+}
+.book-side .cover, .book .cover {
   aspect-ratio: 2 / 3;
   position: relative;
   display: grid; place-items: center;
@@ -280,9 +287,10 @@ h2.section-title::before {
   color: var(--accent);
   overflow: hidden;
 }
-.book-side .cover img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; }
-.book-side h3 { font-family: var(--display); font-weight: 400; font-size: 1.5rem; line-height: 1.15; }
-.book-side p { color: var(--text-dim); font-size: .92rem; line-height: 1.6; margin: .5rem 0 1rem; }
+.book-side .cover img, .book .cover img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; }
+.book-side .btn, .book .btn { padding: .6rem 1.1rem; font-size: .72rem; letter-spacing: .14em; white-space: nowrap; }
+.book-side h3, .book h3 { font-family: var(--display); font-weight: 400; font-size: 1.5rem; line-height: 1.15; }
+.book-side p, .book p { color: var(--text-dim); font-size: .92rem; line-height: 1.6; margin: .5rem 0 1rem; }
 
 .btn {
   display: inline-block;
@@ -358,7 +366,7 @@ h2.section-title::before {
 .essay h2 { font-family: var(--serif); font-weight: 500; font-size: 1.4rem; line-height: 1.2; margin: .4rem 0 .7rem; }
 .essay p { color: var(--text-dim); margin-bottom: 1rem; }
 .essay .more { font-family: var(--sans); font-size: .78rem; letter-spacing: .2em; text-transform: uppercase; }
-.essay .more::after { content: " â†’"; }
+.essay .more::after { content: " →"; }
 
 /* Contact form */
 form.contact { display: grid; gap: 1.3rem; }
@@ -433,7 +441,7 @@ footer {
 /* ---------- Small screens ---------- */
 @media (max-width: 900px) {
   .about-layout { grid-template-columns: 1fr; }
-  .book-side { position: static; padding-left: 0; border-left: 0; max-width: 220px; }
+  .about-layout > .book-side { position: static; padding-left: 0; border-left: 0; margin-top: 2rem; }
 }
 @media (max-width: 620px) {
   .landing .nav-buttons { display: grid; grid-template-columns: 1fr 1fr; width: 86vw; }
