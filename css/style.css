@@ -149,6 +149,17 @@ a:hover { color: var(--parchment); }
   text-transform: uppercase;
   color: var(--parchment-dim);
 }
+.landing .nav-buttons a:hover,
+.landing .nav-buttons a:focus-visible {
+  color: #fff;
+  border-color: #fff;
+  background: rgba(255, 255, 255, 0.06);
+  text-shadow: 0 0 8px rgba(255, 255, 255, 0.7);
+  box-shadow:
+    0 0 12px rgba(255, 255, 255, 0.55),
+    0 0 28px rgba(255, 255, 255, 0.25),
+    inset 0 0 10px rgba(255, 255, 255, 0.12);
+}
 
 /* ---------- Inner pages ---------- */
 .site-header {
