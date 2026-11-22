@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>About Me — Veronica Barber</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400&family=IBM+Plex+Mono:wght@400&family=Jost:wght@300;400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="inner">
+
+  <header class="site-header">
+    <a class="brand" href="index.html">Veronica Barber</a>
+    <nav class="nav-buttons" aria-label="Main navigation">
+      <a href="about.html" class="active">About Me</a>
+      <a href="cv.html">CV</a>
+      <a href="substack.html">Substack</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </header>
+
+  <main>
+    <h1 class="page-title">About Me</h1>
+
+    <section class="prose">
+      <p>I am a first-generation student from Northeastern New York and a member of the Kanienʼkehá꞉ka. My intellectual life begins with two thinkers who seem, at first, unlikely companions: Thoreau’s <em>Walden</em> and Nietzsche’s <em>amor fati</em>. Together they point toward a mixture of hope and minimalism, and toward a labor of common respect and understanding. In political terms, this means a society able to answer pluralistic needs without flattening them.</p>
+
+      <p>I came to artificial intelligence through a practical question: what happens to a society when finance jobs are displaced? That question led me to study AI and to take seriously the repercussions of its continued advance for society and government. Alongside the theory, I am drawn to technology governance more broadly, including machine learning, alignment, and, most recently, the development of retrieval-augmented generation (RAG) systems.</p>
+
+      <p>Academically, I am examining the use of AI in public decision-making and what it means for democratic legitimacy. At stake is whether we can rely on artificial intelligence to aid collective decisions without losing our humanism.</p>
+    </section>
+
+    <!-- BOOK -->
+    <section class="book" aria-label="My book">
+      <div class="cover">
+        <span>Fatalist</span>
+        <!-- Drop your cover at assets/book-cover.jpg -->
+        <img src="assets/book-cover.jpg" alt="Book cover" onerror="this.style.display='none'">
+      </div>
+      <div>
+        <div class="eyebrow">Book</div>
+        <h3>Fatalist</h3>
+        <p>A book on Nietzsche’s <em>amor fati</em>: the love of one’s fate, and what it asks of how we live. <!-- Replace with your own one- or two-sentence description. --></p>
+        <a class="btn" href="https://us.amazon.com/Fatalist-Veronica-Barber/dp/B0FMP977KS" target="_blank" rel="noopener">View on Amazon</a>
+      </div>
+    </section>
+
+    <!-- RESEARCH INTERESTS -->
+    <h2 class="section-title">Research Interests</h2>
+    <div class="tags">
+      <span class="tag">Democratic Theory</span>
+      <span class="tag">Philosophy of Technology</span>
+      <span class="tag">Political Theory</span>
+      <span class="tag">Artificial Intelligence</span>
+    </div>
+
+    <!-- ACADEMIC ENGAGEMENTS -->
+    <h2 class="section-title">Academic Engagements</h2>
+    <div class="cards">
+      <div class="card"><div class="name">Conference Name One</div><div class="meta">Presenter · 2026</div></div>
+      <div class="card"><div class="name">Conference Name Two</div><div class="meta">Discussant · 2025</div></div>
+      <div class="card"><div class="name">Conference Name Three</div><div class="meta">Presenter · 2025</div></div>
+      <div class="card"><div class="name">Conference Name Four</div><div class="meta">Discussant · 2024</div></div>
+      <div class="card"><div class="name">Conference Name Five</div><div class="meta">Presenter · 2024</div></div>
+      <div class="card"><div class="name">Conference Name Six</div><div class="meta">Presenter · 2023</div></div>
+    </div>
+
+    <!-- PUBLICATIONS -->
+    <h2 class="section-title">Publications</h2>
+    <ul class="pubs">
+      <li><div class="title">Article Title One</div><div class="venue">Journal or Publication · 2026</div></li>
+      <li><div class="title">Article Title Two</div><div class="venue">Journal or Publication · 2025</div></li>
+      <li><div class="title">Article Title Three</div><div class="venue">Journal or Publication · 2024</div></li>
+    </ul>
+  </main>
+
+  <footer>© <span id="yr"></span> Veronica Barber</footer>
+  <script>document.getElementById('yr').textContent = new Date().getFullYear();</script>
+</body>
+</html>

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Substack — Veronica Barber</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400&family=IBM+Plex+Mono:wght@400&family=Jost:wght@300;400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="inner">
+
+  <header class="site-header">
+    <a class="brand" href="index.html">Veronica Barber</a>
+    <nav class="nav-buttons" aria-label="Main navigation">
+      <a href="about.html">About Me</a>
+      <a href="cv.html">CV</a>
+      <a href="substack.html" class="active">Substack</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </header>
+
+  <main>
+    <h1 class="page-title">Essays</h1>
+    <p class="prose" style="color: var(--parchment-dim);">Writing on democracy, technology, and the human questions underneath both.</p>
+
+    <!-- Copy one <article> block per essay. Replace the link with the post's Substack URL. -->
+    <article class="essay">
+      <div class="date">November 2026</div>
+      <h2>Essay Title One</h2>
+      <p>A short preview of the essay goes here: two or three sentences that give the reader the question the piece is asking and why it matters.</p>
+      <a class="more" href="https://yourname.substack.com/p/essay-one" target="_blank" rel="noopener">Continue reading</a>
+    </article>
+
+    <article class="essay">
+      <div class="date">October 2026</div>
+      <h2>Essay Title Two</h2>
+      <p>A short preview of the essay goes here: two or three sentences that give the reader the question the piece is asking and why it matters.</p>
+      <a class="more" href="https://yourname.substack.com/p/essay-two" target="_blank" rel="noopener">Continue reading</a>
+    </article>
+
+    <article class="essay">
+      <div class="date">September 2026</div>
+      <h2>Essay Title Three</h2>
+      <p>A short preview of the essay goes here: two or three sentences that give the reader the question the piece is asking and why it matters.</p>
+      <a class="more" href="https://yourname.substack.com/p/essay-three" target="_blank" rel="noopener">Continue reading</a>
+    </article>
+
+    <p style="margin-top: 3rem; text-align: center;">
+      <a class="btn" href="https://yourname.substack.com" target="_blank" rel="noopener">Visit the Substack</a>
+    </p>
+  </main>
+
+  <footer>© <span id="yr"></span> Veronica Barber</footer>
+  <script>document.getElementById('yr').textContent = new Date().getFullYear();</script>
+</body>
+</html>

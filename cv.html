@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>CV — Veronica Barber</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400&family=IBM+Plex+Mono:wght@400&family=Jost:wght@300;400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="inner">
+
+  <header class="site-header">
+    <a class="brand" href="index.html">Veronica Barber</a>
+    <nav class="nav-buttons" aria-label="Main navigation">
+      <a href="about.html">About Me</a>
+      <a href="cv.html" class="active">CV</a>
+      <a href="substack.html">Substack</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </header>
+
+  <main style="max-width: 980px;">
+    <h1 class="page-title">Curriculum Vitae</h1>
+
+    <div class="cv-actions">
+      <!-- Put your CV at assets/cv.pdf -->
+      <a class="btn" href="assets/cv.pdf" download="Veronica-Barber-CV.pdf">Download CV</a>
+      <a class="btn" href="assets/cv.pdf" target="_blank" rel="noopener">Open in New Tab</a>
+    </div>
+
+    <object class="cv-frame" data="assets/cv.pdf#view=FitH" type="application/pdf">
+      <p class="cv-fallback">Your browser can’t display PDFs inline. Please use the download button above.</p>
+    </object>
+  </main>
+
+  <footer>© <span id="yr"></span> Veronica Barber</footer>
+  <script>document.getElementById('yr').textContent = new Date().getFullYear();</script>
+</body>
+</html>
